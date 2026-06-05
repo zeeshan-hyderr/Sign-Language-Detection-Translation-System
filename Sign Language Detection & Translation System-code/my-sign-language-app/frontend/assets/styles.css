@@ -1,0 +1,104 @@
+:root {
+    --bg-main: #040d38;
+    --bg-card: #0a1a5f;
+    --bg-soft: #102a89;
+    --line: #0bbef4;
+    --text: #f5f8ff;
+    --muted: #a2b5e8;
+    --accent: #1ec9ff;
+    --accent-2: #2f67ff;
+}
+
+html, body, [class*="css"] {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 15% 20%, rgba(47, 103, 255, 0.16), transparent 22%),
+        radial-gradient(circle at 80% 10%, rgba(30, 201, 255, 0.17), transparent 22%),
+        linear-gradient(140deg, #02092c 0%, #031052 45%, #04103f 100%);
+    color: var(--text);
+}
+
+.block-container {
+    padding-top: 1.2rem;
+}
+
+.hero-card,
+.panel-card,
+.metric-card {
+    border: 1px solid rgba(11, 190, 244, 0.42);
+    border-radius: 16px;
+    background: rgba(9, 23, 89, 0.78);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(5px);
+    animation: slideIn 320ms ease;
+}
+
+.hero-card {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.panel-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.metric-card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    color: #001026;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--accent), #73e7ff);
+}
+
+.page-title {
+    letter-spacing: 0.2px;
+    margin-bottom: 0.4rem;
+}
+
+.small-note {
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+
+.prediction-box {
+    border: 1px solid rgba(30, 201, 255, 0.45);
+    border-radius: 14px;
+    padding: 0.8rem;
+    background: rgba(5, 15, 58, 0.87);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 0.8rem;
+    margin-top: 1.3rem;
+}
+
+.feature-cell {
+    border: 1px solid rgba(11, 190, 244, 0.32);
+    border-radius: 12px;
+    padding: 0.9rem;
+    text-align: center;
+    background: rgba(7, 18, 70, 0.76);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(8px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

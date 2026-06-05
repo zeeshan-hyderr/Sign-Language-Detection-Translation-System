@@ -1,0 +1,7 @@
+clearml==1.18.0
+fastapi[standard]
+numpy==1.26.4
+pydantic==2.11.4
+tensorflow==2.18.0
+mediapipe
+opencv-python
